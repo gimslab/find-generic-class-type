@@ -1,0 +1,4 @@
+
+public class MyGeneric2Sub<T> extends MyGeneric2<String> {
+
+}
