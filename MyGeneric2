@@ -1,0 +1,20 @@
+
+import java.lang.reflect.Type;
+
+import com.google.common.reflect.TypeToken;
+
+public class MyGeneric2<T> {
+
+	private final TypeToken<T> typeToken = new TypeToken<T>(getClass()) { };
+	private final Type type = typeToken.getType();
+	private final Class<? super T> rawType = typeToken.getRawType();
+
+	public Type getGenericType() {
+		return type;
+	}
+
+	public Class<?> getGenericClassType() {
+		return rawType;
+	}
+
+}
