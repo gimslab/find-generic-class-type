@@ -1,4 +1,3 @@
-package com.coupang.finance.interfaces.amqp.goods.paymentsreport;
 
 public class MyGeneric<T> {
 	
