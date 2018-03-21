@@ -7,11 +7,11 @@ public class MyGeneric2<T> {
 	private final Type type = typeToken.getType();
 	private final Class<? super T> rawType = typeToken.getRawType();
 
-	public Type getGenericType() {
+	public Type getGenericType() { // must used via subclass
 		return type;
 	}
 
-	public Class<?> getGenericClassType() {
+	public Class<?> getGenericClassType() { // must used via subclass
 		return rawType;
 	}
 }
