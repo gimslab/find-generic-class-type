@@ -1,6 +1,4 @@
-
 import java.lang.reflect.Type;
-
 import com.google.common.reflect.TypeToken;
 
 public class MyGeneric2<T> {
@@ -16,5 +14,4 @@ public class MyGeneric2<T> {
 	public Class<?> getGenericClassType() {
 		return rawType;
 	}
-
 }
